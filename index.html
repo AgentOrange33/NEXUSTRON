@@ -1,0 +1,291 @@
+<!DOCTYPE html><html class="dark" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-container": "#484949", "surface-container-highest": "#353437", "surface-bright": "#39393b", "secondary-fixed-dim": "#c6c6c6", "tertiary-fixed-dim": "#bdc7da", "error": "#ffb4ab", "tertiary": "#ffffff", "tertiary-fixed": "#d9e3f7", "inverse-on-surface": "#313032", "surface-container-lowest": "#0e0e10", "on-background": "#e5e1e4", "on-primary-fixed": "#1a1c1d", "outline": "#8f9194", "on-tertiary-fixed": "#121c2a", "surface-container-low": "#1c1b1e", "on-primary": "#2f3132", "on-tertiary": "#273140", "secondary": "#c6c6c6", "tertiary-container": "#d9e3f7", "surface": "#131315", "on-tertiary-fixed-variant": "#3d4757", "inverse-primary": "#5d5e60", "on-error": "#690005", "primary-fixed-dim": "#c6c6c8", "secondary-fixed": "#e3e2e2", "on-error-container": "#ffdad6", "on-secondary-container": "#b8b8b8", "on-secondary-fixed": "#1a1c1c", "inverse-surface": "#e5e1e4", "primary-container": "#e2e2e4", "surface-tint": "#c6c6c8", "on-surface-variant": "#c5c7c9", "surface-variant": "#353437", "surface-container-high": "#2a2a2c", "surface-container": "#201f22", "on-secondary": "#2f3131", "outline-variant": "#44474a", "primary": "#ffffff", "on-tertiary-container": "#5b6576", "on-surface": "#e5e1e4", "on-primary-container": "#636466", "error-container": "#93000a", "on-secondary-fixed-variant": "#464747", "on-primary-fixed-variant": "#454749", "primary-fixed": "#e2e2e4", "surface-dim": "#131315", "background": "#131315" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2.5rem", "gutter": "1.5rem", "margin": "3rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "gutter-sm": "1rem" }, "fontFamily": { "headline-lg": ["Sora"], "label-telemetry": ["JetBrains Mono"], "label-code": ["JetBrains Mono"], "body-sm": ["Geist"], "headline-lg-mobile": ["Sora"], "label-action": ["Geist"], "display-hero": ["Sora"], "headline-md": ["Sora"], "body-md": ["Geist"], "body-lg": ["Geist"], "headline-sm": ["Sora"], "display-hero-mobile": ["Sora"] }, "fontSize": { "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "500" }], "label-telemetry": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }], "label-code": ["10px", { "lineHeight": "14px", "letterSpacing": "0.12em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-action": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "500" }], "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "600" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "600" }] } } } };</script>
+<style>
+  @keyframes smoothFloat {
+    0%, 100% {
+      transform: translateY(0px) scale(1);
+      filter: drop-shadow(0 0 28px rgba(255, 255, 255, 0.22)) brightness(1);
+    }
+    50% {
+      transform: translateY(-8px) scale(1.018);
+      filter: drop-shadow(0 0 46px rgba(255, 255, 255, 0.42)) brightness(1.12);
+    }
+  }
+  @keyframes haloAura {
+    0%, 100% {
+      opacity: 0.35;
+      transform: scale(0.96);
+    }
+    50% {
+      opacity: 0.65;
+      transform: scale(1.05);
+    }
+  }
+  .animate-float-logo {
+    animation: smoothFloat 6.5s ease-in-out infinite;
+    will-change: transform, filter;
+  }
+  .animate-halo-aura {
+    animation: haloAura 5s ease-in-out infinite;
+  }
+</style>
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head><body class="bg-[#0b0b0d] font-body-md text-on-surface antialiased min-h-screen selection:bg-surface-bright selection:text-primary"><header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-surface-container-lowest/60 border-b border-white/[0.06] transition-all duration-300"></header><main class="w-full relative min-h-screen"><div class="flex flex-col w-full relative overflow-hidden text-on-surface min-h-screen">
+<div class="fixed inset-0 w-full h-full pointer-events-none z-0">
+<!-- STITCH_SHADER_START:ANIMATION_16 class="absolute inset-0 w-full h-full pointer-events-none" -->
+<div class="absolute inset-0 w-full h-full pointer-events-none" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_16" style="display:block;width:100%;height:100%" width="1280" height="1024"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_16');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+uniform vec2 u_mouse;
+varying vec2 v_texCoord;
+
+// Simplex-style noise helper
+vec3 mod289(vec3 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec2 mod289(vec2 x) { return x - floor(x * (1.0 / 289.0)) * 289.0; }
+vec3 permute(vec3 x) { return mod289(((x*34.0)+1.0)*x); }
+
+float snoise(vec2 v) {
+    const vec4 C = vec4(0.211324865405187, 0.366025403784439,
+                        -0.577350269189626, 0.024390243902439);
+    vec2 i  = floor(v + dot(v, C.yy) );
+    vec2 x0 = v -   i + dot(i, C.xx);
+    vec2 i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+    vec4 x12 = x0.xyxy + C.xxzz;
+    x12.xy -= i1;
+    i = mod289(i);
+    vec3 p = permute( permute( i.y + vec3(0.0, i1.y, 1.0 ))
+        + i.x + vec3(0.0, i1.x, 1.0 ));
+    vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+    m = m*m ;
+    m = m*m ;
+    vec3 x = 2.0 * fract(p * C.www) - 1.0;
+    vec3 h = abs(x) - 0.5;
+    vec3 ox = floor(x + 0.5);
+    vec3 a0 = x - ox;
+    m *= 1.79284291400159 - 0.85373472095314 * ( a0*a0 + h*h );
+    vec3 g;
+    g.x  = a0.x  * x0.x  + h.x  * x0.y;
+    g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+    return 130.0 * dot(m, g);
+}
+
+// Procedural star with diffraction spikes & soft circular glow
+float drawStar(vec2 uv, vec2 pos, float size, float timeOffset) {
+    vec2 d = uv - pos;
+    float dist = length(d);
+    
+    // Soft core glow (radial falloff)
+    float core = exp(-dist * (60.0 / size));
+    
+    // 4-point diffraction spike (cross sparkle)
+    float spikeH = max(0.0, 1.0 - abs(d.y) * (180.0 / size)) * max(0.0, 1.0 - abs(d.x) * (24.0 / size));
+    float spikeV = max(0.0, 1.0 - abs(d.x) * (180.0 / size)) * max(0.0, 1.0 - abs(d.y) * (24.0 / size));
+    float spikes = pow(spikeH + spikeV, 1.8) * 0.85;
+    
+    // Gentle twinkling phase
+    float twinkle = 0.5 + 0.5 * sin(u_time * 2.2 + timeOffset * 6.2831);
+    
+    return (core * 0.75 + spikes * 0.85) * twinkle;
+}
+
+void main() {
+    vec2 p = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / min(u_resolution.x, u_resolution.y);
+    
+    // Centered singularity
+    float dist = length(p);
+    float angle = atan(p.y, p.x);
+
+    // Gravitational lensing distortion
+    float distortion = 0.28 / (dist + 0.09);
+    float swirl = angle + distortion * 2.2 - u_time * 0.35;
+    
+    // Procedural silver luminous noise bands using polar coordinates
+    float n1 = snoise(vec2(dist * 6.5 - u_time * 0.25, sin(swirl) * 2.5 + cos(swirl) * 1.5));
+    float n2 = snoise(vec2(dist * 13.0 + u_time * 0.18, cos(swirl * 2.0) * 2.0));
+    float noiseFlow = n1 * 0.6 + n2 * 0.4;
+    
+    // Event horizon core radius
+    float horizonRadius = 0.23;
+    float eventHorizon = smoothstep(horizonRadius - 0.015, horizonRadius + 0.03, dist);
+    
+    // Outer accretion glow / halo
+    float diskInner = smoothstep(horizonRadius, horizonRadius + 0.12, dist);
+    float diskOuter = exp(-dist * 2.6);
+    float accretionIntensity = diskInner * diskOuter * (0.85 + 0.65 * noiseFlow);
+    
+    // Smooth spiral streams flowing into the black hole
+    float spiralArms = pow(max(0.0, sin(swirl * 3.0 - dist * 10.0)), 3.5) * exp(-dist * 1.6) * 0.35;
+
+    // Subtle, balanced silver intensity
+    float totalSilverGlow = accretionIntensity * 1.05 + spiralArms * 0.75;
+    
+    // Sophisticated metallic silver / obsidian chrome color grading
+    vec3 deepSpace = vec3(0.005, 0.006, 0.01);
+    vec3 darkGraphite = vec3(0.12, 0.13, 0.16);
+    vec3 silverMid = vec3(0.55, 0.58, 0.65);
+    vec3 chromeHighlight = vec3(0.85, 0.88, 0.93);
+    
+    // Inner black void of event horizon
+    vec3 color = mix(vec3(0.0), deepSpace, eventHorizon);
+    
+    // Toned, subtle silver luminescence on the accretion disk
+    vec3 silverGrad = mix(darkGraphite, silverMid, smoothstep(0.05, 0.55, totalSilverGlow));
+    silverGrad = mix(silverGrad, chromeHighlight, smoothstep(0.55, 1.1, totalSilverGlow));
+    color += silverGrad * totalSilverGlow * eventHorizon;
+    
+    // --- REALISTIC COSMIC STARFIELD (Replacing square blinking dots with star shapes) ---
+    // Cellular grid for distinct stellar bodies with diffraction cross spikes and soft halos
+    vec2 starCoord = p * 16.0;
+    vec2 i_star = floor(starCoord);
+    vec2 f_star = fract(starCoord) - 0.5;
+    
+    float starsAccum = 0.0;
+    for (int y = -1; y <= 1; y++) {
+        for (int x = -1; x <= 1; x++) {
+            vec2 neighbor = vec2(float(x), float(y));
+            vec2 cellId = i_star + neighbor;
+            float rand1 = fract(sin(dot(cellId, vec2(12.9898, 78.233))) * 43758.5453);
+            float rand2 = fract(sin(dot(cellId, vec2(93.9898, 67.345))) * 24634.6345);
+            
+            // Star probability threshold
+            if (rand1 > 0.76) {
+                vec2 starOffset = neighbor + (vec2(rand1, rand2) - 0.5) * 0.7;
+                vec2 starPosUV = (cellId + vec2(0.5) + (vec2(rand1, rand2) - 0.5) * 0.7) / 16.0;
+                float starDistFromCenter = length(starPosUV);
+                
+                // Only place stars in the background cosmic field outside the event horizon
+                if (starDistFromCenter > horizonRadius + 0.04) {
+                    float starSize = 0.35 + rand2 * 0.65;
+                    float starIntensity = drawStar(starCoord, cellId + starOffset - neighbor + 0.5, starSize, rand1);
+                    starsAccum += starIntensity * smoothstep(horizonRadius + 0.04, horizonRadius + 0.22, starDistFromCenter);
+                }
+            }
+        }
+    }
+    
+    // Add glowing stellar sparkle in platinum/pure white
+    vec3 starColor = vec3(0.92, 0.95, 1.0);
+    color += starColor * starsAccum * 0.85;
+    
+    // Smooth peripheral vignette
+    float vignette = smoothstep(1.35, 0.3, length(p));
+    color *= vignette;
+    
+    gl_FragColor = vec4(color, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_16 -->
+<div class="absolute inset-0 bg-radial from-transparent via-[#0b0b0d]/30 to-[#0b0b0d] pointer-events-none"></div>
+</div>
+<section class="relative z-10 w-full max-w-[1440px] mx-auto px-gutter-sm sm:px-gutter pt-28 sm:pt-36 pb-20 flex flex-col items-center justify-center min-h-[calc(100vh-64px)]">
+<div class="relative flex items-center justify-center my-4 sm:my-8 group">
+<div class="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-white/[0.04] blur-3xl pointer-events-none animate-halo-aura"></div>
+
+</div>
+<div class="fixed inset-0 z-20 flex flex-col items-center justify-center pointer-events-none px-4"><h1 class="text-2xl sm:text-4xl md:text-5xl uppercase mb-0 select-none pl-[0.28em] text-center pointer-events-auto" style="font-family: Orbitron, sans-serif; font-weight: 700; letter-spacing: 0.28em; background: linear-gradient(rgb(255, 255, 255) 0%, rgb(216, 219, 226) 45%, rgb(139, 144, 157) 100%) text; -webkit-text-fill-color: transparent; filter: drop-shadow(rgba(255, 255, 255, 0.25) 0px 0px 25px);">NEXUSTRON</h1></div>
+<div class="mt-8 flex flex-col sm:flex-row items-center gap-3.5 w-full sm:w-auto px-6 sm:px-0">
+</div>
+<div class="w-full max-w-4xl mt-16 sm:mt-20 px-4">
+</div>
+</section>
+<script>
+    (function initNexusHUD() {
+      setInterval(() => {
+        const coherenceEl = document.getElementById('metric-coherence');
+        if (coherenceEl) {
+          const base = 99.986;
+          const delta = (Math.random() * 0.004 - 0.002).toFixed(3);
+          coherenceEl.textContent = `${(base + parseFloat(delta)).toFixed(3)}%`;
+        }
+
+        const nodesEl = document.getElementById('metric-nodes');
+        if (nodesEl) {
+          const baseNodes = 142890;
+          const fluctuation = Math.floor(Math.random() * 9 - 4);
+          nodesEl.textContent = (baseNodes + fluctuation).toLocaleString();
+        }
+      }, 2500);
+    })();
+  </script>
+</div></main>
+
+
+</body></html>
